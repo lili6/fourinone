@@ -298,7 +298,8 @@ public class ConfigContext
 	
 	public static void main(String args[])
 	{
-		BeanContext.setConfigFile("D:\\demo\\comutil\\test\\config.xml");
+//		BeanContext.setConfigFile("D:\\demo\\comutil\\test\\config.xml");
+		BeanContext.setConfigFile(ConfigContext.class.getClassLoader().getResource("").getPath()+"config.xml");
 		System.out.println(getParkConfig()[0][0]);
 		LogUtil.fine(getCacheConfig());
 		LogUtil.fine("getParallelPattern:"+getParallelPattern());

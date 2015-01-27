@@ -15,6 +15,7 @@ public enum AuthPolicy{
 	public static void main(String[] args)
 	{
 		System.out.println(authIncluded(AuthPolicy.OP_ALL.getPolicy(),AuthPolicy.OP_READ_WRITE.getPolicy()));//ParkAuth.OP_READ
+		System.out.println(authIncluded(AuthPolicy.OP_READ_WRITE.getPolicy(),AuthPolicy.OP_READ_WRITE.getPolicy()));//ParkAuth.OP_READ
 	}
 	
 	/*
