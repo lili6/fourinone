@@ -25,7 +25,14 @@ public class BeanContext extends ServiceContext
 		String[][] parkcfg = ConfigContext.getParkConfig();
 		return getPark(parkcfg[0][0], Integer.parseInt(parkcfg[0][1]), parkcfg);//input serverconfiglist string[][]
 	}
-	
+
+	/**
+	 *
+	 * @param host
+	 * @param port
+	 * @param sn CacheService 名称
+	 * @param servers
+	 */
 	public static void startPark(String host, int port, String sn, String[][] servers)
 	{
 		try{
