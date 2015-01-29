@@ -16,6 +16,7 @@ class BeanService extends PoolExector
 		if(TPYRZDY)
 			System.setProperty(ConfigContext.getRZDY(),"true");
 		try{
+			System.out.println("======port:" + TPYDK);
 			LocateRegistry.getRegistry(TPYDK).list();
 		}catch(Exception ex){
 			try{

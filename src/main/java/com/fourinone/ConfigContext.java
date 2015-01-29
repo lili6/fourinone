@@ -11,8 +11,8 @@ public class ConfigContext
 	private static MulBean mb = null;
 	private static String QSXYSJ=null,YMMZ=null,RZDY=null,YCDYXY=null,DMY=null,AQCL=null,POLICY=null,LSML=null,SERVICEONWORKER=null;
 	private static long TMOT=-1;
-	static String configFile = "config.xml";
-//	static String configFile = "/Users/lili/env/sources/github/fourinone/target/classes/config.xml";
+	//static String configFile = "config.xml";
+    static String configFile = "/Users/lili/env/sources/github/fourinone/target/classes/config.xml";
 	private static ObjValue USERS = null;
 	
 	static MulBean getMulBean(){

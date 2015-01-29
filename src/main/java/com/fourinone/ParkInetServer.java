@@ -32,8 +32,9 @@ public class ParkInetServer//not public
 		    hs.setExecutor(Executors.newCachedThreadPool());//PoolExector
 		    hs.start();
 		    //hs.stop();
-		    LogUtil.info("", "", "startWebapp("+i+":"+p+")");
+		    LogUtil.info("ParkInetServer", "[start]", "startWebapp("+i+":"+p+")");
 		}catch(IOException e) {
+			LogUtil.info("error:::ParkInetServer", "[start]", "startWebapp("+i+":"+p+")");
 		   LogUtil.info("[InetServer]", "[StartError]", e.getMessage());
 		}
 	}

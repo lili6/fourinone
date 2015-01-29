@@ -19,6 +19,7 @@ public class CacheFacade extends MementoService//implements Cache
 	
 	private ParkLocal getParkLocalFromKid(String kid)
 	{
+		System.out.println("pg=" +pg +" kid=" + kid);
 		String[][] servers = pg.getServers(kid);
 		return BeanContext.getPark(servers[0][0], Integer.parseInt(servers[0][1]), cacheService, servers);
 	}

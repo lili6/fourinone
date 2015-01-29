@@ -57,6 +57,7 @@ public class ParkGroup{
 	}*/
 	
 	public String[][] getServers(String keyId){
+		System.out.println("keyId========" + keyId);
 		String[] keyidarr = keyId.split("-");
 		Long kt = Long.decode("0x"+keyidarr[0]);
 		LogUtil.fine("[getServers]", "[kt]", kt);

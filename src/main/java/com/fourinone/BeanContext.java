@@ -180,6 +180,7 @@ public class BeanContext extends ServiceContext
 	
 	public static Cache getCacheFacade(String host, int port)
 	{
+		System.out.println("----------host=" + host + "port =" + port);
 		return getService(Cache.class, host, port, ConfigContext.getCacheFacadeService());
 	}
 	

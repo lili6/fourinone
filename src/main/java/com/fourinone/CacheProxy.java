@@ -71,6 +71,7 @@ final public class CacheProxy
 		List<ObjectBean> objlist = null;
 		try{
 			objlist = cc.get(keyid);
+			System.out.println("CacheProxy....get..objlist=" + objlist);
 		}catch(Exception e){
 			LogUtil.info("[CacheProxy]", "[get]", e);
 		}
