@@ -1,4 +1,4 @@
-package com;
+package lili;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
